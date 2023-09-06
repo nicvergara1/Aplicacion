@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title #titulo style="text-align: start;">ASISTENCIAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" >
+  <ion-header collapse="condense">
+  </ion-header>
+
+
+  <ion-card style="margin-top: 120px;">
+    <ion-card-header>
+      <ion-card-title #poto style="text-align: center;">Iniciar sesion</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-row>
+        <ion-col col-4></ion-col>
+        <ion-col col-4>
+          <img class="imagen-login" src="https://seeklogo.com/images/D/duoc-uc-logo-F1437952BE-seeklogo.com.png" alt="">
+        </ion-col>
+        <ion-col col-4></ion-col>
+      </ion-row>
+      <ion-item>
+        <ion-input labelPlacement="floating" placeholder="usuario@duocuc.cl">
+          <div slot="label">Email</div>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input labelPlacement="floating" value="" type="password">
+          <div slot="label">Contraseña <ion-text></ion-text></div>
+        </ion-input>
+      </ion-item>
+      <ion-button size="small" fill="clear" color="danger" href="/contacto">Olvide mi constraseña</ion-button>
+    </ion-card-content>
+    <div class=".btn-center">
+    <ion-button style="margin-left: 95px;" size="default"fill="solid" href="/folder/inbox">Iniciar sesion</ion-button>
+  </div>
+    
+  </ion-card>
+</ion-content>
